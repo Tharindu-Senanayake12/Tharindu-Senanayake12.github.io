@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tharindu Senanayake | Portfolio</title>
+
+<title>Tharindu Senanayake | Creative Developer</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,31 +15,39 @@
 <body>
 
 <header>
+
 <nav>
 <h2 class="logo">Tharindu</h2>
 
-<ul class="nav-links">
+<ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
-<li><a href="#work">Work</a></li>
-<li><a href="#projects">Projects</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#skills">Skills</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
+
 </header>
+
 
 
 <section id="home" class="hero">
 
-<h1>Hello, I'm Tharindu</h1>
+<div class="hero-content">
+
+<h1>Creative Developer</h1>
 
 <p>
-Creative Designer | Video Editor | 3D Artist | Software Developer
+Designer • Video Editor • 3D Artist • Programmer
 </p>
 
-<a href="#work" class="btn">View My Work</a>
+<a href="#portfolio" class="btn">Explore My Work</a>
+
+</div>
 
 </section>
+
 
 
 <section id="about">
@@ -46,74 +55,101 @@ Creative Designer | Video Editor | 3D Artist | Software Developer
 <h2>About Me</h2>
 
 <p>
-I am a Computer Science undergraduate passionate about blending creativity and technology.
-I specialize in graphic design, video editing, 3D animation, and software development.
+Computer Science undergraduate passionate about blending creativity and technology.
+I design visuals, edit videos, create 3D animations and build software applications.
 </p>
 
 </section>
 
 
-<section id="work">
 
-<h2>Creative Portfolio</h2>
+<section id="portfolio">
 
-<div class="grid">
+<h2>Portfolio</h2>
 
-<div class="card">
-<h3>Flyer Designs</h3>
-<p>Creative promotional designs and branding work.</p>
-</div>
+<div class="filter-buttons">
 
-<div class="card">
-<h3>Video Editing</h3>
-<p>Music videos, event highlights, and cinematic edits.</p>
-</div>
-
-<div class="card">
-<h3>3D Animations</h3>
-<p>3D modeling and animation created with Blender.</p>
-</div>
+<button onclick="filterProjects('all')">All</button>
+<button onclick="filterProjects('design')">Design</button>
+<button onclick="filterProjects('video')">Video</button>
+<button onclick="filterProjects('dev')">Development</button>
 
 </div>
 
-</section>
 
+<div class="projects">
 
-<section id="projects">
+<div class="card design">
+<h3>Flyer Design</h3>
+<p>Promotional flyer designs.</p>
+</div>
 
-<h2>Development Projects</h2>
+<div class="card video">
+<h3>Music Video Edit</h3>
+<p>Creative video editing project.</p>
+</div>
 
-<div class="grid">
-
-<div class="card">
+<div class="card dev">
 <h3>IoT Surveillance Robot</h3>
-<p>ESP32-CAM robot with temperature and gas sensors.</p>
+<p>ESP32-CAM monitoring robot.</p>
 </div>
 
-<div class="card">
-<h3>Restaurant Management System</h3>
-<p>Java MVC application using MongoDB.</p>
-</div>
-
-<div class="card">
-<h3>Python Platformer Game</h3>
-<p>2D platformer game developed using Pygame.</p>
+<div class="card dev">
+<h3>Restaurant System</h3>
+<p>Java + MongoDB application.</p>
 </div>
 
 </div>
 
 </section>
+
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill">
+
+<p>Graphic Design</p>
+<div class="bar"><div class="progress design"></div></div>
+
+</div>
+
+<div class="skill">
+
+<p>Video Editing</p>
+<div class="bar"><div class="progress video"></div></div>
+
+</div>
+
+<div class="skill">
+
+<p>3D Modeling</p>
+<div class="bar"><div class="progress modeling"></div></div>
+
+</div>
+
+<div class="skill">
+
+<p>Programming</p>
+<div class="bar"><div class="progress coding"></div></div>
+
+</div>
+
+</section>
+
 
 
 <section id="contact">
 
 <h2>Contact</h2>
 
-<p>Email: yourmail@gmail.com</p>
-
+<p>Email: tharindusenanayake134@gmail.com</p>
 <p>GitHub: github.com/Tharindu-Senanayake12</p>
 
 </section>
+
 
 
 <footer>
@@ -125,5 +161,4 @@ I specialize in graphic design, video editing, 3D animation, and software develo
 <script src="script.js"></script>
 
 </body>
-
 </html>
