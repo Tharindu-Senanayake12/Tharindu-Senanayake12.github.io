@@ -4,21 +4,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Tharindu Senanayake | Creative Developer</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Scroll Reveal -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header>
+<!-- Particles Background -->
+<div id="particles-js"></div>
 
+<header>
 <nav>
 <h2 class="logo">Tharindu</h2>
-
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -27,55 +30,34 @@
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
-
 </header>
 
-
-
+<!-- Hero Section -->
 <section id="home" class="hero">
-
 <div class="hero-content">
-
 <h1>Creative Developer</h1>
-
-<p>
-Designer • Video Editor • 3D Artist • Programmer
-</p>
-
+<p>Designer • Video Editor • 3D Artist • Programmer</p>
 <a href="#portfolio" class="btn">Explore My Work</a>
-
 </div>
-
 </section>
 
-
-
-<section id="about">
-
+<!-- About Section -->
+<section id="about" data-aos="fade-up">
 <h2>About Me</h2>
-
-<p>
-Computer Science undergraduate passionate about blending creativity and technology.
-I design visuals, edit videos, create 3D animations and build software applications.
-</p>
-
+<p>Computer Science undergraduate passionate about blending creativity and technology.
+I design visuals, edit videos, create 3D animations and build software applications.</p>
 </section>
 
-
-
-<section id="portfolio">
-
+<!-- Portfolio Section -->
+<section id="portfolio" data-aos="fade-up">
 <h2>Portfolio</h2>
 
 <div class="filter-buttons">
-
 <button onclick="filterProjects('all')">All</button>
 <button onclick="filterProjects('design')">Design</button>
 <button onclick="filterProjects('video')">Video</button>
 <button onclick="filterProjects('dev')">Development</button>
-
 </div>
-
 
 <div class="projects">
 
@@ -100,65 +82,64 @@ I design visuals, edit videos, create 3D animations and build software applicati
 </div>
 
 </div>
-
 </section>
 
-
-
-<section id="skills">
-
+<!-- Skills Section -->
+<section id="skills" data-aos="fade-up">
 <h2>Skills</h2>
 
 <div class="skill">
-
 <p>Graphic Design</p>
 <div class="bar"><div class="progress design"></div></div>
-
 </div>
 
 <div class="skill">
-
 <p>Video Editing</p>
 <div class="bar"><div class="progress video"></div></div>
-
 </div>
 
 <div class="skill">
-
 <p>3D Modeling</p>
 <div class="bar"><div class="progress modeling"></div></div>
-
 </div>
 
 <div class="skill">
-
 <p>Programming</p>
 <div class="bar"><div class="progress coding"></div></div>
-
 </div>
 
 </section>
 
-
-
-<section id="contact">
-
+<!-- Contact Section -->
+<section id="contact" data-aos="fade-up">
 <h2>Contact</h2>
-
-<p>Email: tharindusenanayake134@gmail.com</p>
+<p>Email: yourmail@gmail.com</p>
 <p>GitHub: github.com/Tharindu-Senanayake12</p>
-
 </section>
 
-
+<!-- Project Modal -->
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<h2 id="modal-title"></h2>
+<p id="modal-desc"></p>
+</div>
+</div>
 
 <footer>
-
 <p>© 2026 Tharindu Senanayake</p>
-
 </footer>
 
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="particles-config.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="three-hero.js"></script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 
 </body>
 </html>
