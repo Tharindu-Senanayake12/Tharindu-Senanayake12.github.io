@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +7,7 @@
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<!-- Scroll Reveal -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -34,7 +30,11 @@
 
 <!-- Hero Section -->
 <section id="home" class="hero">
-<div class="hero-content">
+<div class="hero-content" data-aos="fade-up">
+
+<!-- Profile Picture -->
+<img src="assets/images/profile.png" alt="Profile Picture" class="profile-pic">
+
 <h1>Creative Developer</h1>
 <p>Designer • Video Editor • 3D Artist • Programmer</p>
 <a href="#portfolio" class="btn">Explore My Work</a>
@@ -60,7 +60,6 @@ I design visuals, edit videos, create 3D animations and build software applicati
 </div>
 
 <div class="projects">
-
 <div class="card design">
 <h3>Flyer Design</h3>
 <p>Promotional flyer designs.</p>
@@ -80,34 +79,28 @@ I design visuals, edit videos, create 3D animations and build software applicati
 <h3>Restaurant System</h3>
 <p>Java + MongoDB application.</p>
 </div>
-
 </div>
 </section>
 
 <!-- Skills Section -->
 <section id="skills" data-aos="fade-up">
 <h2>Skills</h2>
-
 <div class="skill">
 <p>Graphic Design</p>
 <div class="bar"><div class="progress design"></div></div>
 </div>
-
 <div class="skill">
 <p>Video Editing</p>
 <div class="bar"><div class="progress video"></div></div>
 </div>
-
 <div class="skill">
 <p>3D Modeling</p>
 <div class="bar"><div class="progress modeling"></div></div>
 </div>
-
 <div class="skill">
 <p>Programming</p>
 <div class="bar"><div class="progress coding"></div></div>
 </div>
-
 </section>
 
 <!-- Contact Section -->
@@ -131,9 +124,7 @@ I design visuals, edit videos, create 3D animations and build software applicati
 </footer>
 
 <!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 <script src="particles-config.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="three-hero.js"></script>
 <script src="script.js"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
