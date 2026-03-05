@@ -1,136 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tharindu Senanayake | Creative Developer</title>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharindu Senanayake | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Playfair+Display:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
 
-<!-- Particles Background -->
-<div id="particles-js"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-<header>
-<nav>
-<h2 class="logo">Tharindu</h2>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#portfolio">Portfolio</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
+    <header>
+        <nav>
+            <h2 class="logo">Tharindu.</h2>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-<div class="hero-content" data-aos="fade-up">
+    <section id="home" class="hero-3d">
+        <div class="hero-content-top" data-aos="fade-down" data-aos-duration="1200">
+            <p class="accent-text">Hello, I am Tharindu Senanayake</p>
+            <h1>CREATIVE DEVELOPER<br>& DESIGNER</h1>            
+        </div>
+        <div>
+            <a href="#portfolio" class="btn-primary">
+                <span class="btn-icon">→</span> EXPLORE WORK
+            </a>
+        </div>
 
-<!-- Profile Picture -->
-<img src="assets/images/profile.png" alt="Profile Picture" class="profile-pic">
+        <div class="scene">
+            <div class="carousel" id="carousel">
+                <div class="carousel-item" style="background-image: url('assets/images/sample1.jpg');"></div>
+                <div class="carousel-item" style="background-image: url('assets/images/sample2.jpg');"></div>
+                <div class="carousel-item" style="background-image: url('assets/images/sample3.jpg');"></div>
+                <div class="carousel-item" style="background-image: url('assets/images/sample4.jpg');"></div>
+                <div class="carousel-item" style="background-image: url('assets/images/sample5.jpg');"></div>
+                <div class="carousel-item" style="background-image: url('assets/images/sample6.jpg');"></div>
+            </div>
+        </div>
 
-<h1>Creative Developer</h1>
-<p>Designer • Video Editor • 3D Artist • Programmer</p>
-<a href="#portfolio" class="btn">Explore My Work</a>
-</div>
-</section>
+        <div class="bottom-fade"></div>
 
-<!-- About Section -->
-<section id="about" data-aos="fade-up">
-<h2>About Me</h2>
-<p>Computer Science undergraduate passionate about blending creativity and technology.
-I design visuals, edit videos, create 3D animations and build software applications.</p>
-</section>
+        <div class="profile-container">
+            <div class="profile-glow"></div>
+            <img src="assets/images/profile.png" alt="Tharindu Senanayake" class="center-profile" onerror="this.style.display='none'">
+        </div>
 
-<!-- Portfolio Section -->
-<section id="portfolio" data-aos="fade-up">
-<h2>Portfolio</h2>
+        <div class="slider-container">
+            <input type="range" id="gallery-slider" min="-360" max="0" value="0">
+        </div>
+    </section>
 
-<div class="filter-buttons">
-<button onclick="filterProjects('all')">All</button>
-<button onclick="filterProjects('design')">Design</button>
-<button onclick="filterProjects('video')">Video</button>
-<button onclick="filterProjects('dev')">Development</button>
-</div>
+    <section id="about" data-aos="fade-up">
+        <div class="section-container">
+            <h2>About Me</h2>
+            <p class="lead-text">I am a Computer Science undergraduate with a deep passion for both the logical and the visual. Whether I am architecting backend database systems or designing immersive interactive environments, I thrive on building digital experiences that are as beautiful as they are functional.</p>
+        </div>
+    </section>
 
-<div class="projects">
-<div class="card design">
-<h3>Flyer Design</h3>
-<p>Promotional flyer designs.</p>
-</div>
+    <section id="portfolio">
+        <div class="section-container" data-aos="fade-up">
+            <h2>Selected Works</h2>
+            
+            <div class="filter-buttons">
+                <button class="active" onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('design')">Design & 3D</button>
+                <button onclick="filterProjects('dev')">Development</button>
+            </div>
 
-<div class="card video">
-<h3>Music Video Edit</h3>
-<p>Creative video editing project.</p>
-</div>
+            <div class="projects">
+                <div class="card dev design">
+                    <div class="card-content">
+                        <span class="category-tag">UI Design & AI</span>
+                        <h3>Sign Language Translator</h3>
+                        <p>A mobile application featuring a custom UI, powered by TensorFlow to translate sign language into text and speech.</p>
+                    </div>
+                </div>
 
-<div class="card dev">
-<h3>IoT Surveillance Robot</h3>
-<p>ESP32-CAM monitoring robot.</p>
-</div>
+                <div class="card dev design">
+                    <div class="card-content">
+                        <span class="category-tag">Game Development</span>
+                        <h3>2D Sri Lankan Adventure</h3>
+                        <p>An interactive 2D adventure game integrating rich local folklore, handling both visual asset creation and programming logic.</p>
+                    </div>
+                </div>
 
-<div class="card dev">
-<h3>Restaurant System</h3>
-<p>Java + MongoDB application.</p>
-</div>
-</div>
-</section>
+                <div class="card dev">
+                    <div class="card-content">
+                        <span class="category-tag">Computer Vision</span>
+                        <h3>Human Pose Estimation</h3>
+                        <p>A software solution built to accurately map and track human body mechanics in real-time utilizing advanced image processing.</p>
+                    </div>
+                </div>
 
-<!-- Skills Section -->
-<section id="skills" data-aos="fade-up">
-<h2>Skills</h2>
-<div class="skill">
-<p>Graphic Design</p>
-<div class="bar"><div class="progress design"></div></div>
-</div>
-<div class="skill">
-<p>Video Editing</p>
-<div class="bar"><div class="progress video"></div></div>
-</div>
-<div class="skill">
-<p>3D Modeling</p>
-<div class="bar"><div class="progress modeling"></div></div>
-</div>
-<div class="skill">
-<p>Programming</p>
-<div class="bar"><div class="progress coding"></div></div>
-</div>
-</section>
+                <div class="card design">
+                    <div class="card-content">
+                        <span class="category-tag">Motion Graphics</span>
+                        <h3>Waya OASIS GameZone</h3>
+                        <p>A high-energy, dynamic 3D logo reveal animation created for the Annual GameZone 2025 event.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact" data-aos="fade-up">
-<h2>Contact</h2>
-<p>Email: yourmail@gmail.com</p>
-<p>GitHub: github.com/Tharindu-Senanayake12</p>
-</section>
+    <section id="skills" data-aos="fade-up">
+        <div class="section-container">
+            <h2>Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <div class="skill-info"><span>3D Modeling & Animation</span> <span>90%</span></div>
+                    <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info"><span>UI/UX & Graphic Design</span> <span>85%</span></div>
+                    <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info"><span>Software Dev (C#, Python)</span> <span>85%</span></div>
+                    <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-info"><span>Machine Learning & AI</span> <span>75%</span></div>
+                    <div class="bar"><div class="progress" style="width: 75%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Project Modal -->
-<div id="modal" class="modal">
-<div class="modal-content">
-<span class="close">&times;</span>
-<h2 id="modal-title"></h2>
-<p id="modal-desc"></p>
-</div>
-</div>
+    <section id="contact" data-aos="fade-up">
+        <div class="section-container text-center">
+            <h2>Let's Build Something</h2>
+            <p>Currently open for new opportunities and collaborations.</p>
+            <div class="contact-links">
+                <a href="mailto:yourmail@gmail.com" class="btn-primary outline">Email Me</a>
+                <a href="https://github.com/Tharindu-Senanayake12" target="_blank" class="btn-primary outline">GitHub Profile</a>
+            </div>
+        </div>
+    </section>
 
-<footer>
-<p>© 2026 Tharindu Senanayake</p>
-</footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <span class="category-tag" id="modal-tag"></span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
 
-<!-- Scripts -->
-<script src="particles-config.js"></script>
-<script src="three-hero.js"></script>
-<script src="script.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-AOS.init();
-</script>
+    <footer>
+        <p>© <span id="year"></span> Tharindu Senanayake. All rights reserved.</p>
+    </footer>
 
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
