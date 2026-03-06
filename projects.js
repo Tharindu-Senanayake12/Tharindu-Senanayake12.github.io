@@ -16,23 +16,23 @@ const projectsData = [
     {
         filterClasses: "dev",
         tag: "Computer Vision",
-        title: "Human Pose Estimation",
+        title: "Human Pose Estimation Model : Low End",
         description: "A software solution built to accurately map and track human body mechanics in real-time utilizing advanced image processing.",
         image: "assets/images/sample14.png"
     },
     {
         filterClasses: "dev",
         tag: "Backend",
-        title: "Pharmacy Management",
+        title: "Pharmacy Management System",
         description: "A robust Pharmacy Management System built using C# and SQL databases.",
-        image: "assets/images/sample3.jpg"
+        image: "assets/images/sample16.jpg"
     },
     {
         filterClasses: "dev",
         tag: "UI & Backend",
         title: "Restaurant POS & Admin Management System",
         description: "A comprehensive point-of-sale and admin management system for restaurants, featuring inventory tracking, order processing, and reporting capabilities.",
-        image: "assets/images/sample4.jpg"
+        image: "assets/images/d1.png"
     },
     {
         filterClasses: "design flyer",
@@ -56,6 +56,13 @@ const projectsData = [
         image: "assets/images/sample8.jpg"
     },
     {
+        filterClasses: "design flyer",
+        tag: "Flyer Design",
+        title: "Session Flyer",
+        description: "Brand Promotional",
+        image: "assets/images/sample11.jpg"
+    },
+    {
         filterClasses: "design 3d",
         tag: "Motion Graphics",
         title: "Realistic 3D Character - For a Music Video",
@@ -63,10 +70,31 @@ const projectsData = [
         image: "assets/images/sample7.jpg"
     },
     {
+        filterClasses: "design flyer",
+        tag: "Flyer Design",
+        title: "Session Flyer",
+        description: "Wayaxtreme 3.0",
+        image: "assets/images/sample10.jpg"
+    },
+    {
+        filterClasses: "design flyer",
+        tag: "Flyer Design",
+        title: "Session Flyer",
+        description: "Sinhala & Tamil New Year!",
+        image: "assets/images/sample12.jpg"
+    },
+    {
         filterClasses: "design 3d",
-        tag: "3D Environment",
-        title: "Sci-Fi Cityscape",
-        description: "A highly detailed 3D rendering of a futuristic city alleyway.",
-        image: "assets/images/sample8.jpg"
-    }
+        tag: "3D Simulation",
+        title: "3D Wind Turbine Simulation",
+        description: "Real-time 3D simulation of a wind turbine created using Blender, demonstrating the mechanics and aerodynamics of wind energy generation.",
+        image: "assets/images/sample9.jpg"
+    },
+    {
+        filterClasses: "design flyer",
+        tag: "Flyer Design",
+        title: "Event Flyer",
+        description: "Wayaextreme 3.0",
+        image: "assets/images/sample5.jpg"
+    },
 ];
