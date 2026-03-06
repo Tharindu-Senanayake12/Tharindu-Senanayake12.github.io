@@ -1,9 +1,9 @@
 particlesJS("particles-js", {
     particles: {
-        number: { value: 40 }, // Reduced from 80 for cleaner look
+        number: { value: 1 }, // Reduced from 80 for cleaner look
         color: { value: "#ffffff" },
         shape: { type: "circle" },
-        opacity: { value: 0.1 }, // Made much more subtle
+        opacity: { value: 0.01 }, // Made much more subtle
         size: { value: 2 },
         move: { enable: true, speed: 0.8 } // Slowed down slightly
     },
