@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tharindu Senanayake | Creative Developer</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Playfair+Display:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600;800;900&family=Playfair+Display:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
     <div id="preloader">
-        <div class="loader-text">Tharindu<span>.</span></div>
+        <div class="signature-wrapper">
+            <div class="signature-text">Tharindu Senanayake</div>
+            <div class="sparkle"></div>
+        </div>
     </div>
 
     <div id="scroll-progress"></div>
-
     <div id="particles-js"></div>
-
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
@@ -25,9 +27,7 @@
         <nav>
             <h2 class="logo">Tharindu.</h2>
             <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -42,11 +42,7 @@
 
     <section id="home" class="hero-3d">
         <div class="moon"></div>
-        <div class="shooting-stars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-        </div>
+        <div class="shooting-stars"><div class="star"></div><div class="star"></div><div class="star"></div></div>
 
         <div class="hero-content-top" data-aos="fade-down" data-aos-duration="1200">
             <p class="accent-text">Hello, I am Tharindu Senanayake</p>
@@ -54,9 +50,7 @@
         </div>
         
         <div class="hero-content-front">
-            <a href="#portfolio" class="btn-primary">
-                <span class="btn-icon">→</span> EXPLORE WORK
-            </a>
+            <a href="#portfolio" class="btn-primary"><span class="btn-icon">→</span> EXPLORE WORK</a>
         </div>
 
         <div class="scene">
@@ -65,12 +59,14 @@
                 <div class="carousel-item"><img src="assets/images/sample2.jpg" alt="Sample 2"></div>
                 <div class="carousel-item"><img src="assets/images/sample3.jpg" alt="Sample 3"></div>
                 <div class="carousel-item"><img src="assets/images/sample4.jpg" alt="Sample 4"></div>
-                <div class="carousel-item"><img src="assets/images/sample5.jpg" alt="Sample 5"></div>
                 <div class="carousel-item"><img src="assets/images/sample6.jpg" alt="Sample 6"></div>
+                <div class="carousel-item"><img src="assets/images/sample5.jpg" alt="Sample 5"></div>
                 <div class="carousel-item"><img src="assets/images/sample7.jpg" alt="Sample 7"></div>
                 <div class="carousel-item"><img src="assets/images/sample8.jpg" alt="Sample 8"></div>
                 <div class="carousel-item"><img src="assets/images/sample9.jpg" alt="Sample 9"></div>
                 <div class="carousel-item"><img src="assets/images/sample10.jpg" alt="Sample 10"></div>
+                <div class="carousel-item"><img src="assets/images/sample11.jpg" alt="Sample 11"></div>
+                <div class="carousel-item"><img src="assets/images/sample12.jpg" alt="Sample 12"></div>
             </div>
         </div>
 
@@ -89,7 +85,12 @@
     <section id="about" data-aos="fade-up">
         <div class="section-container">
             <h2 class="gradient-text">About Me</h2>
-            <p class="lead-text">I am a Computer Science undergraduate blending logical architecture with creative design. My focus spans from developing culturally rich, Sri Lankan folklore-inspired 2D adventure games to engineering complex AI solutions like Human Pose Estimation and Brain-Computer Interfaces. I thrive on building digital experiences that push the boundaries of innovation and visual aesthetics.</p>
+            <p class="lead-text">
+                I am Tharindu Senanayake, a Computer Science undergraduate and technology enthusiast who enjoys creating both software solutions and creative digital content. <br>
+
+                My interests span software engineering, web development, UI design, 3D modeling, animation, and multimedia production. I enjoy blending technical knowledge with creativity to build projects that are functional, visually appealing, and impactful.
+
+                <br>I am always exploring new technologies and creative tools to improve my skills and bring ideas to life.</p>
         </div>
     </section>
 
@@ -109,65 +110,7 @@
                 <button class="sub-btn" onclick="filterSubProjects('design', '3d')">3D Works</button>
             </div>
 
-            <div class="projects" id="portfolio-grid">
-                <div class="card dev tilt-card">
-                    <div class="card-content">
-                        <span class="category-tag">UI Design & AI</span>
-                        <h3>Sign Language Translator</h3>
-                        <p>A mobile application featuring a custom UI, powered by TensorFlow to translate sign language into text and speech.</p>
-                    </div>
-                </div>
-                <div class="card dev tilt-card">
-                    <div class="card-content">
-                        <span class="category-tag">Computer Vision</span>
-                        <h3>Human Pose Estimation</h3>
-                        <p>A software solution built to accurately map and track human body mechanics in real-time utilizing advanced image processing.</p>
-                    </div>
-                </div>
-                <div class="card dev tilt-card">
-                    <div class="card-content">
-                        <span class="category-tag">Backend</span>
-                        <h3>Pharmacy Management</h3>
-                        <p>A robust Pharmacy Management System built using C# and SQL databases.</p>
-                    </div>
-                </div>
-                <div class="card dev tilt-card">
-                    <div class="card-content">
-                        <span class="category-tag">Game Development</span>
-                        <h3>2D Sri Lankan Adventure</h3>
-                        <p>An interactive 2D adventure game integrating rich local folklore, handling both visual asset creation and programming logic.</p>
-                    </div>
-                </div>
-
-                <div class="card design flyer tilt-card">
-                    <div class="card-content">
-                        <span class="category-tag">Flyer Design</span>
-                        <h3>Event Promo 1</h3>
-                        <p>High-impact promotional flyer for a tech conference.</p>
-                    </div>
-                </div>
-                <div class="card design flyer tilt-card">
-                    <div class="card-content">
-                        <span class="category-tag">Flyer Design</span>
-                        <h3>Event Promo 2</h3>
-                        <p>Creative poster design for a local art exhibition.</p>
-                    </div>
-                </div>
-                <div class="card design 3d tilt-card">
-                    <div class="card-content">
-                        <span class="category-tag">Motion Graphics</span>
-                        <h3>Waya OASIS GameZone</h3>
-                        <p>A high-energy, dynamic 3D logo reveal animation created for the Annual GameZone 2025 event.</p>
-                    </div>
-                </div>
-                <div class="card design 3d tilt-card">
-                    <div class="card-content">
-                        <span class="category-tag">3D Environment</span>
-                        <h3>Sci-Fi Cityscape</h3>
-                        <p>A highly detailed 3D rendering of a futuristic city alleyway.</p>
-                    </div>
-                </div>
-            </div> 
+            <div class="projects" id="portfolio-grid"></div> 
             
             <div class="show-more-container" id="show-more-container">
                 <button class="btn-primary outline" id="show-more-btn" onclick="showMoreProjects()">Load More Work</button>
@@ -191,16 +134,16 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-content tilt-card">
                         <span class="category-tag">Creative Direction</span>
-                        <h3>Sample</h3>
-                        <p>Leading</p>
+                        <h3>Waya OASIS GameZone 2025</h3>
+                        <p>Leading creative output and producing dynamic 3D logo reveal animations for the highly anticipated annual gaming event.</p>
                     </div>
                 </div>
                 <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content tilt-card">
                         <span class="category-tag">Industry Engagement</span>
-                        <h3>Sample</h3>
-                        <p></p>
+                        <h3>IFS & SimCentric Sri Lanka</h3>
+                        <p>Gaining direct industry insights and exposure to enterprise-level software architectures through hands-on corporate visits.</p>
                     </div>
                 </div>
             </div>
@@ -288,12 +231,21 @@
     </section>
 
     <div id="modal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content large-modal">
             <span class="close">&times;</span>
-            <span class="category-tag" id="modal-tag"></span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-desc"></p>
+            <div class="modal-body">
+                <div class="modal-image-container">
+                    <img id="modal-img" src="" alt="Project Preview">
+                </div>
+                <div class="modal-text-container">
+                    <span class="category-tag" id="modal-tag"></span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-desc"></p>
+                </div>
+            </div>
         </div>
+        <button class="lightbox-nav nav-prev" onclick="navigateModal(-1)">&#10094;</button>
+        <button class="lightbox-nav nav-next" onclick="navigateModal(1)">&#10095;</button>
     </div>
 
     <footer>
@@ -302,6 +254,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="projects.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
