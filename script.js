@@ -283,7 +283,7 @@ window.filterSubProjects = function(mainCategory, subCategory) {
     updatePortfolioDisplay();
 }
 
-window.showMoreProjects = function() { itemsShowing += 4; updatePortfolioDisplay(); }
+window.showMoreProjects = function() { itemsShowing += 6; updatePortfolioDisplay(); }
 
 // =========================================
 // 4. (Preserved) MODAL NAVIGATION FUNCTIONS

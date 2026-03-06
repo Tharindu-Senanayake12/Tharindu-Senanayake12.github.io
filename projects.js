@@ -72,15 +72,15 @@ const projectsData = [
     {
         filterClasses: "design flyer",
         tag: "Flyer Design",
-        title: "Session Flyer",
-        description: "Wayaxtreme 3.0",
+        title: "Seasonal Flyer",
+        description: "Sinhala & Tamil New Year!",
         image: "assets/images/sample10.jpg"
     },
     {
         filterClasses: "design flyer",
         tag: "Flyer Design",
         title: "Session Flyer",
-        description: "Sinhala & Tamil New Year!",
+        description: "UI/UX Design Session",
         image: "assets/images/sample12.jpg"
     },
     {
@@ -97,4 +97,33 @@ const projectsData = [
         description: "Wayaextreme 3.0",
         image: "assets/images/sample5.jpg"
     },
+    {
+        filterClasses: "design flyer",
+        tag: "Flyer Design",
+        title: "Poya day Flyer",
+        description: "Uduwap Poya Day",
+        image: "assets/images/f4.jpg"
+    },
+    {
+        filterClasses: "design flyer",
+        tag: "Flyer Design",
+        title: "Asbires 2025",
+        description: "Backgound",
+        image: "assets/images/f1.jpg"
+    },
+    {
+        filterClasses: "design flyer",
+        tag: "Flyer Design",
+        title: "Awareness Session Flyer",
+        description: "Happening Now! - Wayaxtreme 3.0",
+        image: "assets/images/f3.jpg"
+    },
+    {
+        filterClasses: "design flyer",
+        tag: "Flyer Design",
+        title: "Asbires 2025",
+        description: "Asbires 2025 Introduction Flyer",
+        image: "assets/images/f2.jpg"
+    },
+    
 ];
