@@ -10,6 +10,14 @@
 </head>
 <body>
 
+    <div id="preloader">
+        <div class="loader-text">Tharindu<span>.</span></div>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    <div id="particles-js"></div>
+
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
@@ -25,18 +33,27 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#nft-3d">3D & NFTs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="home" class="hero-3d">
+        <div class="moon"></div>
+        <div class="shooting-stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+
         <div class="hero-content-top" data-aos="fade-down" data-aos-duration="1200">
             <p class="accent-text">Hello, I am Tharindu Senanayake</p>
             <h1>CREATIVE DEVELOPER<br>& DESIGNER</h1>            
         </div>
-        <div>
+        
+        <div class="hero-content-front">
             <a href="#portfolio" class="btn-primary">
                 <span class="btn-icon">→</span> EXPLORE WORK
             </a>
@@ -44,12 +61,16 @@
 
         <div class="scene">
             <div class="carousel" id="carousel">
-                <div class="carousel-item" style="background-image: url('assets/images/sample1.jpg');"></div>
-                <div class="carousel-item" style="background-image: url('assets/images/sample2.jpg');"></div>
-                <div class="carousel-item" style="background-image: url('assets/images/sample3.jpg');"></div>
-                <div class="carousel-item" style="background-image: url('assets/images/sample4.jpg');"></div>
-                <div class="carousel-item" style="background-image: url('assets/images/sample5.jpg');"></div>
-                <div class="carousel-item" style="background-image: url('assets/images/sample6.jpg');"></div>
+                <div class="carousel-item"><img src="assets/images/sample1.jpg" alt="Sample 1"></div>
+                <div class="carousel-item"><img src="assets/images/sample2.jpg" alt="Sample 2"></div>
+                <div class="carousel-item"><img src="assets/images/sample3.jpg" alt="Sample 3"></div>
+                <div class="carousel-item"><img src="assets/images/sample4.jpg" alt="Sample 4"></div>
+                <div class="carousel-item"><img src="assets/images/sample5.jpg" alt="Sample 5"></div>
+                <div class="carousel-item"><img src="assets/images/sample6.jpg" alt="Sample 6"></div>
+                <div class="carousel-item"><img src="assets/images/sample7.jpg" alt="Sample 7"></div>
+                <div class="carousel-item"><img src="assets/images/sample8.jpg" alt="Sample 8"></div>
+                <div class="carousel-item"><img src="assets/images/sample9.jpg" alt="Sample 9"></div>
+                <div class="carousel-item"><img src="assets/images/sample10.jpg" alt="Sample 10"></div>
             </div>
         </div>
 
@@ -67,14 +88,14 @@
 
     <section id="about" data-aos="fade-up">
         <div class="section-container">
-            <h2>About Me</h2>
-            <p class="lead-text">I am a Computer Science undergraduate with a deep passion for both the logical and the visual. Whether I am architecting backend database systems or designing immersive interactive environments, I thrive on building digital experiences that are as beautiful as they are functional.</p>
+            <h2 class="gradient-text">About Me</h2>
+            <p class="lead-text">I am a Computer Science undergraduate blending logical architecture with creative design. My focus spans from developing culturally rich, Sri Lankan folklore-inspired 2D adventure games to engineering complex AI solutions like Human Pose Estimation and Brain-Computer Interfaces. I thrive on building digital experiences that push the boundaries of innovation and visual aesthetics.</p>
         </div>
     </section>
 
     <section id="portfolio">
         <div class="section-container" data-aos="fade-up">
-            <h2>Selected Works</h2>
+            <h2 class="gradient-text">Selected Works</h2>
             
             <div class="filter-buttons">
                 <button class="active" onclick="filterProjects('all')">All</button>
@@ -82,16 +103,35 @@
                 <button onclick="filterProjects('dev')">Development</button>
             </div>
 
-            <div class="projects">
-                <div class="card dev design">
+            <div class="sub-filter-buttons" id="design-sub-filters" style="display: none;">
+                <button class="active sub-btn" onclick="filterSubProjects('design', 'all')">All Design</button>
+                <button class="sub-btn" onclick="filterSubProjects('design', 'flyer')">Flyers</button>
+                <button class="sub-btn" onclick="filterSubProjects('design', '3d')">3D Works</button>
+            </div>
+
+            <div class="projects" id="portfolio-grid">
+                <div class="card dev tilt-card">
                     <div class="card-content">
                         <span class="category-tag">UI Design & AI</span>
                         <h3>Sign Language Translator</h3>
                         <p>A mobile application featuring a custom UI, powered by TensorFlow to translate sign language into text and speech.</p>
                     </div>
                 </div>
-
-                <div class="card dev design">
+                <div class="card dev tilt-card">
+                    <div class="card-content">
+                        <span class="category-tag">Computer Vision</span>
+                        <h3>Human Pose Estimation</h3>
+                        <p>A software solution built to accurately map and track human body mechanics in real-time utilizing advanced image processing.</p>
+                    </div>
+                </div>
+                <div class="card dev tilt-card">
+                    <div class="card-content">
+                        <span class="category-tag">Backend</span>
+                        <h3>Pharmacy Management</h3>
+                        <p>A robust Pharmacy Management System built using C# and SQL databases.</p>
+                    </div>
+                </div>
+                <div class="card dev tilt-card">
                     <div class="card-content">
                         <span class="category-tag">Game Development</span>
                         <h3>2D Sri Lankan Adventure</h3>
@@ -99,44 +139,138 @@
                     </div>
                 </div>
 
-                <div class="card dev">
+                <div class="card design flyer tilt-card">
                     <div class="card-content">
-                        <span class="category-tag">Computer Vision</span>
-                        <h3>Human Pose Estimation</h3>
-                        <p>A software solution built to accurately map and track human body mechanics in real-time utilizing advanced image processing.</p>
+                        <span class="category-tag">Flyer Design</span>
+                        <h3>Event Promo 1</h3>
+                        <p>High-impact promotional flyer for a tech conference.</p>
                     </div>
                 </div>
-
-                <div class="card design">
+                <div class="card design flyer tilt-card">
+                    <div class="card-content">
+                        <span class="category-tag">Flyer Design</span>
+                        <h3>Event Promo 2</h3>
+                        <p>Creative poster design for a local art exhibition.</p>
+                    </div>
+                </div>
+                <div class="card design 3d tilt-card">
                     <div class="card-content">
                         <span class="category-tag">Motion Graphics</span>
                         <h3>Waya OASIS GameZone</h3>
                         <p>A high-energy, dynamic 3D logo reveal animation created for the Annual GameZone 2025 event.</p>
                     </div>
                 </div>
+                <div class="card design 3d tilt-card">
+                    <div class="card-content">
+                        <span class="category-tag">3D Environment</span>
+                        <h3>Sci-Fi Cityscape</h3>
+                        <p>A highly detailed 3D rendering of a futuristic city alleyway.</p>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="show-more-container" id="show-more-container">
+                <button class="btn-primary outline" id="show-more-btn" onclick="showMoreProjects()">Load More Work</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" data-aos="fade-up">
+        <div class="section-container">
+            <h2 class="gradient-text">Journey & Innovations</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content tilt-card">
+                        <span class="category-tag">Research</span>
+                        <h3>Brain-Computer Interfaces</h3>
+                        <p>Conducting active research in the realm of BCIs, exploring the cutting-edge intersection of human cognition and machine interaction.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content tilt-card">
+                        <span class="category-tag">Creative Direction</span>
+                        <h3>Sample</h3>
+                        <p>Leading</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content tilt-card">
+                        <span class="category-tag">Industry Engagement</span>
+                        <h3>Sample</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nft-3d" data-aos="fade-up">
+        <div class="section-container">
+            <h2 class="gradient-text">3D Works & NFTs</h2>
+            <p class="lead-text" style="margin-bottom: 50px;">A showcase of my premium 3D modeling, animations, and minted digital assets.</p>
+
+            <div class="wheel-scene">
+                <div class="video-wheel" id="video-wheel">
+                    <div class="wheel-item"><video src="assets/videos/nft1.mp4" autoplay loop muted playsinline></video></div>
+                    <div class="wheel-item"><img src="assets/videos/nft2.png" alt="NFT 2"></div>
+                    <div class="wheel-item"><video src="assets/videos/nft3.mp4" autoplay loop muted playsinline></video></div>
+                    <div class="wheel-item"><img src="assets/videos/nft4.png" alt="NFT 4"></div>
+                </div>
+            </div>
+
+            <div class="wheel-slider-container">
+                <input type="range" id="video-slider" min="-360" max="0" value="0">
             </div>
         </div>
     </section>
 
     <section id="skills" data-aos="fade-up">
         <div class="section-container">
-            <h2>Technical Arsenal</h2>
-            <div class="skills-grid">
-                <div class="skill">
-                    <div class="skill-info"><span>3D Modeling & Animation</span> <span>90%</span></div>
-                    <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+            <h2 class="gradient-text">Technical Arsenal</h2>
+            
+            <div class="skills-column-wrapper">
+                <div class="skill-category-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Languages & Tools</h3>
+                    <div class="skills-icons">
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/C.svg" alt="C" /><span>C</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python-Dark.svg" alt="Python" /><span>Python</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PHP-Dark.svg" alt="PHP" /><span>PHP</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Java-Light.svg" alt="Java" /><span>Java</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg" alt="JavaScript" /><span>JavaScript</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg" alt="React" /><span>React</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MySQL-Light.svg" alt="MySQL" /><span>MySQL</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MongoDB.svg" alt="MongoDB" /><span>MongoDB</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg" alt="CSS" /><span>CSS</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg" alt="Git" /><span>Git</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/OpenCV-Dark.svg" alt="OpenCV" /><span>OpenCV</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/SciKitLearn-Light.svg" alt="SciKitLearn" /><span>SciKitLearn</span></div>
+                    </div>
                 </div>
-                <div class="skill">
-                    <div class="skill-info"><span>UI/UX & Graphic Design</span> <span>85%</span></div>
-                    <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+
+                <div class="skill-category-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Design & Creative</h3>
+                    <div class="skills-icons">
+                        <div class="skill-pill"><img src="https://logoeps.com/wp-content/uploads/2012/11/zbrush-vector-logo.png" alt="Zbrush" /><span>ZBrush</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Blender-Light.svg" alt="Blender" /><span>Blender</span></div>
+                        <div class="skill-pill"><img src="https://cdn.worldvectorlogo.com/logos/3ds-max-full.svg" alt="3DS Max" /><span>3DS Max</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Premiere.svg" alt="Premiere Pro" /><span>Premiere Pro</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Illustrator.svg" alt="Illustrator" /><span>Illustrator</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Photoshop.svg" alt="Photoshop" /><span>Photoshop</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Figma-Dark.svg" alt="Figma" /><span>Figma</span></div>
+                    </div>
                 </div>
-                <div class="skill">
-                    <div class="skill-info"><span>Software Dev (C#, Python)</span> <span>85%</span></div>
-                    <div class="bar"><div class="progress" style="width: 85%;"></div></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-info"><span>Machine Learning & AI</span> <span>75%</span></div>
-                    <div class="bar"><div class="progress" style="width: 75%;"></div></div>
+
+                <div class="skill-category-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Game Engines</h3>
+                    <div class="skills-icons">
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/UnrealEngine.svg" alt="Unreal Engine" /><span>Unreal Engine</span></div>
+                        <div class="skill-pill"><img src="https://logodix.com/logo/1821947.png" alt="CryEngine" /><span>CryEngine</span></div>
+                        <div class="skill-pill"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Godot-Light.svg" alt="Godot" /><span>Godot</span></div>
+                        <div class="skill-pill"><img src="https://repository-images.githubusercontent.com/186906951/35cdc380-e176-11eb-9c28-bbaefddafb98" alt="GDevelop" /><span>GDevelop</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,7 +278,7 @@
 
     <section id="contact" data-aos="fade-up">
         <div class="section-container text-center">
-            <h2>Let's Build Something</h2>
+            <h2 class="gradient-text">Let's Build Something</h2>
             <p>Currently open for new opportunities and collaborations.</p>
             <div class="contact-links">
                 <a href="mailto:yourmail@gmail.com" class="btn-primary outline">Email Me</a>
@@ -166,6 +300,7 @@
         <p>© <span id="year"></span> Tharindu Senanayake. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
