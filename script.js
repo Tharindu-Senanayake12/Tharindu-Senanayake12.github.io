@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(typeof particlesJS !== 'undefined') {
         particlesJS("particles-js", {
             particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } }, 
+                number: { value: 10, density: { enable: true, value_area: 800 } }, 
                 color: { value: "#ffffff" }, shape: { type: "circle" },
                 opacity: { value: 0.8, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } }, 
                 size: { value: 2.5, random: true, anim: { enable: false } },

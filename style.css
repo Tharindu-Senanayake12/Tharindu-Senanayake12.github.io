@@ -1,5 +1,5 @@
 :root {
-    --bg-dark: #02040a; 
+    --bg-dark: #03030a; 
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
     --accent-red: #ff8f33;
@@ -23,13 +23,51 @@ body {
 }
 
 /* ========================================= */
+/* AMBIENT BACKGROUND LIGHTS                 */
+/* ========================================= */
+.ambient-background {
+    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: -3; /* Sits behind everything, including particles */
+    overflow: hidden; pointer-events: none;
+}
+
+.ambient-light {
+    position: absolute; border-radius: 50%;
+    filter: blur(120px); /* Massive blur creates the glowing shade effect */
+    opacity: 0.35;
+    animation: float-light 20s infinite alternate ease-in-out;
+    will-change: transform;
+}
+
+.color-purple {
+    top: -10%; left: -10%; width: 50vw; height: 50vw;
+    background: radial-gradient(circle, rgba(138,43,226,0.8) 0%, rgba(75,0,130,0) 70%);
+}
+
+.color-orange {
+    bottom: -20%; right: -10%; width: 60vw; height: 60vw;
+    background: radial-gradient(circle, rgba(255,143,51,0.6) 0%, rgba(255,51,68,0) 70%);
+    animation-delay: -5s; animation-direction: alternate-reverse;
+}
+
+@keyframes float-light {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(10vw, 10vh) scale(1.2); }
+    100% { transform: translate(-5vw, -5vh) scale(0.9); }
+}
+
+/* ========================================= */
 /* HANDWRITING PRELOADER & SPARKLE           */
 /* ========================================= */
 #preloader {
     position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
     background: var(--bg-dark); z-index: 99999; display: flex;
-    justify-content: center; align-items: center; transition: opacity 0.8s ease;
+    justify-content: center; align-items: center; transition: opacity 0.8s ease, transform 1.2s ease;
 }
+
+/* These classes are added by JS for the cinematic exit */
+.preloader-phase-1 { transform: scale(0.9); }
+.preloader-phase-2 { opacity: 0; }
 
 .signature-wrapper {
     position: relative;
@@ -43,15 +81,9 @@ body {
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    
-    /* --- FIX FOR CROPPED TEXT --- */
-    /* 1. Add extra line height to account for tall swoops */
     line-height: 3.5; 
-    /* 2. Add padding to the top and bottom so the tails aren't cut off */
     padding: 60px 0; 
-    /* 3. Ensure the cursor line spans the new height cleanly */
     border-right: 3px solid transparent; 
-    
     animation: writing-effect 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
@@ -61,30 +93,15 @@ body {
     100% { width: 100%; border-right-color: transparent; }
 }
 
-/* Custom CSS 4-Point Sparkle Star */
 .sparkle {
-    position: absolute;
-    right: -30px; /* Positions it right at the end of the text */
-    top: 10%;
-    width: 30px;
-    height: 30px;
-    background: var(--accent-gradient);
-    /* Draws a beautiful star shape */
+    position: absolute; right: -30px; top: 10%; width: 30px; height: 30px; background: var(--accent-gradient);
     clip-path: polygon(50% 0%, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0% 50%, 40% 40%);
-    opacity: 0;
-    filter: drop-shadow(0 0 10px var(--accent-glow));
-    /* Pops in just as the writing finishes */
-    animation: pop-sparkle 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 2.2s, 
-               spin-sparkle 4s linear infinite 2.2s;
+    opacity: 0; filter: drop-shadow(0 0 10px var(--accent-glow));
+    animation: pop-sparkle 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 2.2s, spin-sparkle 4s linear infinite 2.2s;
 }
 
-@keyframes pop-sparkle {
-    0% { opacity: 0; transform: scale(0) rotate(0deg); }
-    100% { opacity: 1; transform: scale(1) rotate(90deg); }
-}
-@keyframes spin-sparkle {
-    to { transform: scale(1) rotate(450deg); }
-}
+@keyframes pop-sparkle { 0% { opacity: 0; transform: scale(0) rotate(0deg); } 100% { opacity: 1; transform: scale(1) rotate(90deg); } }
+@keyframes spin-sparkle { to { transform: scale(1) rotate(450deg); } }
 
 /* ========================================= */
 /* SCROLL PROGRESS & PARTICLES               */
@@ -95,10 +112,8 @@ body {
     box-shadow: 0 0 10px var(--accent-glow); transition: width 0.1s ease;
 }
 
-/* Twinkling Stars Background */
 #particles-js { position: fixed; width: 100%; height: 100vh; top: 0; left: 0; z-index: -2; pointer-events: none; }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--bg-dark); }
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
@@ -120,7 +135,7 @@ body {
 /* HEADER & NAV                              */
 /* ========================================= */
 header {
-    position: fixed; width: 100%; background: rgba(2, 4, 10, 0.85); backdrop-filter: blur(15px); 
+    position: fixed; width: 100%; background: rgba(3, 3, 10, 0.85); backdrop-filter: blur(15px); 
     -webkit-backdrop-filter: blur(15px); border-bottom: 1px solid var(--glass-border); padding: 20px 0; z-index: 100;
 }
 nav { display: flex; justify-content: space-between; align-items: center; width: 85%; max-width: 1400px; margin: auto; }
@@ -160,6 +175,9 @@ nav { display: flex; justify-content: space-between; align-items: center; width:
 .shooting-stars .star:nth-child(1) { top: 0; left: 10%; animation-delay: 2s; }
 .shooting-stars .star:nth-child(2) { top: 10%; left: 80%; animation-delay: 7s; }
 .shooting-stars .star:nth-child(3) { top: 30%; left: 0; animation-delay: 13s; }
+.shooting-stars .star:nth-child(4) { top: 15%; left: 40%; animation-delay: 4s; }
+.shooting-stars .star:nth-child(5) { top: 5%; left: 60%; animation-delay: 9s; }
+.shooting-stars .star:nth-child(6) { top: 25%; left: 20%; animation-delay: 16s; }
 
 @keyframes shoot { 0% { transform: rotate(315deg) translateX(0); opacity: 1; } 10% { opacity: 0; } 100% { transform: rotate(315deg) translateX(-1500px); opacity: 0; } }
 
@@ -364,7 +382,7 @@ h2 { font-size: 2.8rem; font-weight: 900; margin-bottom: 60px; letter-spacing: -
 .skill-pill span { font-size: 0.9rem; font-weight: 600; color: var(--text-muted); transition: color 0.3s ease; }
 
 /* ========================================= */
-/* CONTACT                                   */
+/* CONTACT & MODAL                           */
 /* ========================================= */
 .contact-links { margin-top: 40px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;}
 footer { text-align: center; padding: 30px; color: var(--text-muted); font-size: 0.9rem; border-top: 1px solid var(--glass-border); }
@@ -459,7 +477,7 @@ footer { text-align: center; padding: 30px; color: var(--text-muted); font-size:
     .hamburger { display: flex; }
     .nav-links {
         position: fixed; top: 0; right: -100%; width: 70%; height: 100vh;
-        background: rgba(2, 4, 10, 0.98); flex-direction: column; justify-content: center; align-items: center;
+        background: rgba(3, 3, 10, 0.98); flex-direction: column; justify-content: center; align-items: center;
         transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); border-left: 1px solid var(--glass-border);
     }
     .nav-links.active { right: 0; }
@@ -473,5 +491,3 @@ footer { text-align: center; padding: 30px; color: var(--text-muted); font-size:
     * { cursor: auto !important; }
     .tilt-card { transform: none !important; } 
 }
-
-
