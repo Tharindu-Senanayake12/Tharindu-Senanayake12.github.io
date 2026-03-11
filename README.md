@@ -1,83 +1,66 @@
-👋 Hi, I'm Tharindu Senanayake
-<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=800&color=00C2FF&center=true&vCenter=true&width=750&lines=Computer+Science+Undergraduate;Full+Stack+Developer;Creative+Designer+%26+Video+Editor;IoT+%7C+Game+Development+%7C+AI+Enthusiast;Building+Technology+With+Creativity" /> </p>
-🌐 Portfolio Website
+<div align="center">
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35">
+  <h1>Hi, I'm Tharindu Senanayake 👋</h1>
 
-🚀 Live Portfolio
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3200&pause=900&color=00C2FF&center=true&vCenter=true&width=800&lines=Computer+Science+Undergraduate;Full+Stack+Developer;Creative+Designer+%7C+3D+Artist;IoT+%7C+Game+Developer;Building+Technology+With+Creativity" alt="Typing SVG" />
 
-👉 https://tharindu-senanayake12.github.io/
+  <p>
+    <b>Bridging the gap between robust software engineering and compelling digital design.</b>
+  </p>
 
-This portfolio highlights both my technical development skills and creative digital work, combining programming, design, and multimedia production.
+  <a href="https://tharindu-senanayake12.github.io/">
+    <img src="https://img.shields.io/badge/🚀_Visit_My_Portfolio-00C2FF?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio"/>
+  </a>
+</div>
 
-👨‍💻 About Me
+<br/>
 
-I am a Computer Science undergraduate who enjoys building innovative digital solutions.
+## 👨‍💻 About Me
 
-I work across both technology and creative media, allowing me to develop projects that are not only functional but also visually engaging.
+I am a **Computer Science Undergraduate** passionate about solving real-world problems through innovative technology. By combining backend logic with frontend aesthetics, I build complete digital products from concept to final experience. 
 
-My work spans across:
+- 🔭 **Focus Areas:** Full Stack Web & Desktop Apps, IoT Systems, and Game Development.
+- 🎨 **Creative Edge:** UI/UX Design, 3D Animation, and Video Editing.
+- 💡 **Goal:** To engineer functional systems wrapped in exceptional visual quality.
 
-Software Engineering
+---
 
-Full Stack Web Development
+## 🛠️ Technical Arsenal
 
-IoT Systems
+### 💻 Development & Engineering
+<p> 
+  <img src="https://skillicons.dev/icons?i=java,python,js,cs,cpp" alt="Programming Languages"/> <br/>
+  <img src="https://skillicons.dev/icons?i=html,css,react,nodejs,mongodb" alt="Web Development"/>
+</p>
 
-Game Development
+### 🎨 Design & Creative Media
+<p> 
+  <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator,figma" alt="Design Tools"/> 
+</p>
 
-UI/UX Design
+### ⚙️ Tools & Architecture
+<p> 
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,visualstudio" alt="Tools & Platforms"/> 
+</p>
 
-3D Animation & Motion Graphics
 
-I enjoy transforming ideas into real-world digital experiences.
 
-⚡ Tech Stack
-💻 Programming Languages
-<p> <img src="https://skillicons.dev/icons?i=java,python,js,cs,cpp"/> </p>
-🌐 Web Development
-<p> <img src="https://skillicons.dev/icons?i=html,css,react,nodejs,mongodb"/> </p>
-🛠 Tools & Software
-<p> <img src="https://skillicons.dev/icons?i=git,github,vscode,visualstudio,figma"/> </p>
-🎨 Creative Tools
-<p> <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator"/> </p>
-🚀 Featured Areas in My Portfolio
-💻 Development Projects
+---
 
-Web Applications
+## 🌍 Let's Connect & Collaborate
 
-Desktop Applications
+If you find my projects interesting or want to collaborate on an idea that merges tech and creativity, feel free to reach out!
 
-IoT Systems
+<div align="center">
+  <a href="https://github.com/tharindu-senanayake12">
+    <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://tharindu-senanayake12.github.io/">
+    <img src="https://img.shields.io/badge/Portfolio-00C2FF?style=for-the-badge&logo=web&logoColor=white" alt="Portfolio"/>
+  </a>
+</div>
 
-Game Development
-
-Database Systems
-
-🎨 Creative Projects
-
-Graphic Design
-
-Motion Graphics
-
-3D Animation
-
-Video Editing
-
-UI/UX Design
-
-This mix of development + creativity helps me create complete digital experiences.
-
-📊 GitHub Stats
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=tharindu-senanayake12&show_icons=true&theme=tokyonight"/> <img src="https://github-readme-streak-stats.herokuapp.com/?user=tharindu-senanayake12&theme=tokyonight"/> </p>
-📈 Most Used Languages
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tharindu-senanayake12&layout=compact&theme=tokyonight"/> </p>
-🌍 Connect With Me
-<p> <a href="https://github.com/tharindu-senanayake12"> <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github"/> </a> <a href="https://tharindu-senanayake12.github.io/"> <img src="https://img.shields.io/badge/Portfolio-00C2FF?style=for-the-badge&logo=google-chrome&logoColor=white"/> </a> </p>
-⭐ Support My Work
-
-If you like my projects, consider:
-
-⭐ Starring repositories
-🍴 Forking projects
-🤝 Collaborating on new ideas
-
-💡 "Technology and creativity together can build powerful digital experiences."
+<p align="center">
+  <i>⭐ Star my repositories • 🍴 Fork projects • 🤝 Collaborate on ideas</i><br>
+  <b>Technology + Creativity = Powerful Digital Experiences</b>
+</p>
