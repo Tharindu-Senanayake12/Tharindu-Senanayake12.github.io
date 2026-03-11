@@ -23,27 +23,6 @@ I am a **Computer Science Undergraduate** passionate about solving real-world pr
 - 🎨 **Creative Edge:** UI/UX Design, 3D Animation, and Video Editing.
 - 💡 **Goal:** To engineer functional systems wrapped in exceptional visual quality.
 
----
-
-## 🛠️ Technical Arsenal
-
-### 💻 Development & Engineering
-<p> 
-  <img src="https://skillicons.dev/icons?i=java,python,js,cs,cpp" alt="Programming Languages"/> <br/>
-  <img src="https://skillicons.dev/icons?i=html,css,react,nodejs,mongodb" alt="Web Development"/>
-</p>
-
-### 🎨 Design & Creative Media
-<p> 
-  <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator,figma" alt="Design Tools"/> 
-</p>
-
-### ⚙️ Tools & Architecture
-<p> 
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,visualstudio" alt="Tools & Platforms"/> 
-</p>
-
-
 
 ---
 
