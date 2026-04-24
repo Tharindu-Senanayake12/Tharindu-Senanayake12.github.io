@@ -70,6 +70,13 @@ const projectsData = [
         image: "assets/images/sample7.jpg"
     },
     {
+        filterClasses: "design 3d",
+        tag: "Motion Graphics",
+        title: "Lord Shiva - 3D Character Model",
+        description: "A realistic 3D character model.",
+        image: "assets/images/3d_01.png"
+    },
+    {
         filterClasses: "design flyer",
         tag: "Flyer Design",
         title: "Seasonal Flyer",
